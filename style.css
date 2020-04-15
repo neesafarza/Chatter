@@ -1,47 +1,88 @@
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
 body {
-    background: lightblue ;
+    background-image:url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+    /* background: #010a43 ; */
   }
 
 #input-area {
         display: block;
+        padding: 2rem;
+        margin-top: auto;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 0.5rem;
     
 }
 
+#ans-button {
+        display: block;
+        margin-top: 0.8rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.5rem;
+}
+
 #messages {
-    background: lightpink;
-    height: 80vh;
+    background: #ffc2c2;
+    height: 60vh;
     overflow: auto;
     margin: 5rem 20rem 5rem 20rem
     
 }
 
+#messages:hover{
+    background-color: #010a43
+}
+
+#messages div:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
 .answer{
+    
     padding: 1rem;
-    background-color: red;
+    background-color: #ff2e63;
     width: auto;
-    text-align: right;
+    border-radius: 0.8rem;
+    text-align: left;
     margin: 2rem 2rem 2rem 16rem;
 }
 
 .question{
-    background-color: white;
+    
+    background-color: #ff9d9d;
     width: auto;
+    border-radius: 0.8rem;
     padding: 1rem;
     text-align: left;
     margin: 2rem 16rem 2rem 2rem;
 }
+
+#exitstat{
+    text-align: center;
+    color: aliceblue
+}
   
 .time{
+    color: whitesmoke;
     font-size: 0.8rem;
     font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif
-    
 }
-/* .timeright {
-    margin: 0 2rem 2rem 16rem;
-}
-
-.timeleft{
-    margin: 0 16rem 2rem 2rem;
-} */
