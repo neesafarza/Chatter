@@ -5,9 +5,8 @@ const convo1 = ['What is your name?',
   'Do you believe in life outer space?',
   'What house are you in Hogwarts?',
   'do you want more question?',
-  'Unfortunately there is no more question',
+  'Unfortunately there are no more questions',
 ];
-
 
 const Conversation = class {
   constructor(questions) {
@@ -25,9 +24,9 @@ const Conversation = class {
       return question;
     }
 };
-
 const convo = new Conversation(convo1);
 
+// remove this commented code
 /* var pickrandom = () => {
     let random1 = Math.floor(Math.random() * conversations.length) ;
     return conversations[random1]

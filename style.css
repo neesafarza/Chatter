@@ -17,8 +17,8 @@
   }
 
 body {
+    background: #010a43 ;
     background-image:url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
-    /* background: #010a43 ; */
   }
 
 #input-area {
@@ -48,11 +48,12 @@ body {
 }
 
 #messages:hover{
-    background-color: #010a43
+    background-color: #010a43;
 }
 
 #messages div:hover{
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    cursor: pointer;
 }
 
 
