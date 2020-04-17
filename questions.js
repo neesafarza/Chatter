@@ -1,10 +1,14 @@
-const convo1 = ['What is your name?',
-  'what is your favourite colour',
+const convo1 = [
+  'Hello there, What is your name?',
+  'What is your favourite colour?',
+  'What is your favourite food?',
+  'When is your birthday?',
+  'If you can have dinner with anyone(living or alive), who would it be?',
   'Do you think OJ did it?',
   'Do you think Carole Baskin killed her husband?',
   'Do you believe in life outer space?',
   'What house are you in Hogwarts?',
-  'do you want more question?',
+  'Do you want more question?',
   'Unfortunately there are no more questions',
 ];
 
@@ -25,9 +29,3 @@ const Conversation = class {
     }
 };
 const convo = new Conversation(convo1);
-
-// remove this commented code
-/* var pickrandom = () => {
-    let random1 = Math.floor(Math.random() * conversations.length) ;
-    return conversations[random1]
-} */
