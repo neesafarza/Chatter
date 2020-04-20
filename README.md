@@ -19,5 +19,5 @@ The computer will keep generating next questions after user send answer until th
 
 ## Credits
 
-codework
-[soundjay](https://www.soundjay.com/misc-sounds.html) for the sound effects.
+- codework
+- [soundjay](https://www.soundjay.com/misc-sounds.html) for the sound effects.
