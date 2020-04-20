@@ -8,7 +8,9 @@ const convo1 = [
   'Do you think Carole Baskin killed her husband?',
   'Do you believe in life outer space?',
   'What house are you in Hogwarts?',
-  'Do you want more question?',
+  'What would you rather face 1000 ant size tigers or one tiger sized ant??',
+  'How do you tame a horse in minecraft?',
+  'Do you want more questions?',
   'Unfortunately there are no more questions',
 ];
 
@@ -28,4 +30,3 @@ const Conversation = class {
       return question;
     }
 };
-const convo = new Conversation(convo1);

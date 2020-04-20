@@ -25,14 +25,18 @@
 body {
     background: #010a43 ;
     background-image:url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+    margin: 0;
   }
 
 #header{
   padding: 1rem;
+  width: 100%;
   text-align: center;
-  background: rgba(25,25,112,0.1);
+  animation: popout 2s ease;
   color: white;
   font-size: 0.8rem;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.5rem;
 }
 
 #input-area {
@@ -62,10 +66,12 @@ animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
 
 #messages {
-    background: #ffc2c2;
+    background: rgb(255,194,194, 0.9);
     height: 60vh;
     overflow: auto;
-    margin: 1.5rem 20rem 1.5rem 20rem
+    margin: 1.5rem 20rem 1.5rem 20rem;
+    
+
     
 }
 
@@ -82,6 +88,7 @@ animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     text-align: left;
     margin: 2rem 2rem 2rem 16rem;
     animation: popout 1s ease;
+    box-shadow: 0.15rem 0.15rem black;
 
 }
 
@@ -94,6 +101,8 @@ animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     text-align: left;
     margin: 2rem 16rem 2rem 2rem;
     animation: popout 1s ease;
+    box-shadow: 0.15rem 0.15rem black;
+
 }
 
 #exitstat{
@@ -112,3 +121,4 @@ button:hover{
     font-size: 0.8rem;
     font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif
 }
+

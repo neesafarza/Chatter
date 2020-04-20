@@ -23,6 +23,7 @@ const sendAnswer = () => {
     alert('Goodbye!');
     window.close();
   }
+  return true;
 };
 
 const sendQuestion = (convo, audioElement) => {
@@ -54,9 +55,9 @@ $(document).ready(() => {
     audioElement.currentTime = 0;
     sendQuestion(convo, audioElement);
 
-
     // clear input-area after sending
     $('#input-area').val(() => '');
+    return true;
   });
 
   $('#input-area').keypress((e) => {
@@ -65,5 +66,6 @@ $(document).ready(() => {
       $('#ans-button').click();
       return false;
     }
+    return true;
   });
 });
